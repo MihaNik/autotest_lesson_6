@@ -10,7 +10,7 @@ public class YandexTest {
     @Test
     public void fieldsTest() {
         open("https://yandex.ru");
-        $(".serp-header__main .input__box").setValue("Selenide").pressEnter();
+        $("#text").setValue("Selenide").pressEnter();
         $("li.serp-item div a.link").shouldHave(text("Selenide"));
     }
 }
